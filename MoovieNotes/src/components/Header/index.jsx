@@ -3,7 +3,7 @@ import { Container, Profile } from './styles';
 export function Header(){
     return(
         <Container>        
-            <h1>RocketMoovies</h1>
+            <h1>MoovieNotes</h1>
             <input type="text" placeholder='pesquisar pelo título'/>
             <Profile> 
             <div>
