@@ -1,10 +1,9 @@
 import { Container, Content, About, Rating } from './styles';
 import { FiArrowLeft, FiClock, FiStar} from 'react-icons/fi';
-import { FaStar } from 'react-icons/fa';
-import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header';
 import { Tag } from '../../components/Tags';
+import { FaStar } from 'react-icons/fa';
 
 export function Details(){
     return(
