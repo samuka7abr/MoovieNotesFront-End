@@ -9,6 +9,7 @@ export const Container = styled.header`
     width: 100%;
     height: 116px;
 
+
     border-bottom: 1px solid;
     border-bottom-color: ${({theme}) => theme.COLORS.GRAY} ;
 
@@ -19,7 +20,7 @@ export const Container = styled.header`
     }
     
     >input{
-        width: 630px;
+        width: 800px;
         height: 56px;
         background-color: ${({theme}) => theme.COLORS.GRAY};
         border: none;
