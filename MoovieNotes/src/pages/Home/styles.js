@@ -21,8 +21,9 @@ export const Container = styled.div`
             font-size: 32px;
         }
 
-        Button{
+        .button{
             width: fit-content;
+            
         }
         align-items: center;
     }

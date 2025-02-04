@@ -12,7 +12,7 @@ export function Details(){
         <main>  
            <Content>
                 <FiArrowLeft />
-                <ButtonText title='Voltar' />
+                <ButtonText to="/"title='Voltar' />
                 <Rating>
                     <h1>Django Libre</h1>
                     <FaStar />

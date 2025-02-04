@@ -9,11 +9,11 @@ export function Home(){
         <Header />
         <div>
             <h1>Meus Filmes</h1>
-            <Button title="Adicionar Filme"/>
+            <Button className="button"to="/new" title="Adicionar Filme"/>
         </div>
         <main>
             
-            <Moovie
+            <Moovie  to="/details/${5}"
                 data={{
                 title: 'Django Libre',
                 rating: 4,

@@ -1,17 +1,28 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(Link)`
     width: 1120px;
     height: 223px;
-    background-color: ${({theme}) => theme.COLORS.GRAY};
+    background-color: ${({ theme }) => theme.COLORS.GRAY};
     border-radius: 6px;
     padding: 32px;
     margin-bottom: 24px;
-    > h1{
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    > h1 {
         margin-bottom: 8px;
-        font-size: 24px
+        font-size: 24px;
+    }
+
+    &:hover {
+        filter: brightness(0.9);
     }
 `;
+
 
 export const Description = styled.p`
     font-size: 16px;

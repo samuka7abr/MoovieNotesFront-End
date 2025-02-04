@@ -5,7 +5,7 @@ export function Header(){
         <Container>        
             <h1>MoovieNotes</h1>
             <input type="text" placeholder='pesquisar pelo título'/>
-            <Profile> 
+            <Profile to="/profile"> 
             <div>
                 <strong>Samuel Abrão</strong>
                 <span>sair</span>

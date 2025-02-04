@@ -15,7 +15,7 @@ export function New(){
                 <Form>
                     <header>
                         <FiArrowLeft />
-                        <ButtonText title='Voltar' />
+                        <ButtonText to="/"title='Voltar' />
                         <h1>Novo Filme</h1>
                     </header>
                     <div>
