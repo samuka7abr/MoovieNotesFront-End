@@ -25,7 +25,7 @@ export function Header(){
                      
                     <strong>{user.name}</strong>
                     <Exit >
-                        <span onClick={handleSignOut}>Sair</span>
+                        <span onClick={handleSignOut}>sair</span>
                     </Exit>
                 </div>
 
