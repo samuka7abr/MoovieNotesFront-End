@@ -25,7 +25,7 @@ export function Header(){
                     </Exit>
                 </div>
 
-                <Image to={'/profile'}>
+                <Image to={'/profile/'}>
                     <img src= "https://github.com/samuka7abr.png" alt='Foto do usuário'/>
                 </Image>
             </Profile>

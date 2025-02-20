@@ -51,7 +51,7 @@ function AuthProvider( { children} ){
                 user.avatar = response.data.avatar;
             }
             
-            await api.put('/users', user, {
+            await api.put(`/users/${user.id}`, user, {
                 headers: {
                     Authorization: `Bearer ${data.token}`
                 }
