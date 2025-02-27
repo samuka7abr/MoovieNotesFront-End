@@ -44,7 +44,7 @@ export function New(){
                             <NoteItem 
                             key={String(index)}
                             value={tag} 
-                            onClick={() => {}}
+                            onClick={() => {handleRemoveTag(tag)}}
                             />
                         ))
                         }
@@ -55,7 +55,7 @@ export function New(){
                         />
                     </Markers>
                     <Controls>
-                        <Button className="exclude" title="Excluir Filme"/>
+                        <Button className="exclude" title="Excluir Filme" />
                         <Button title="Salvar alterações"/>
                     </Controls>
                 </Form>
