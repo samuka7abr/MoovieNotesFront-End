@@ -6,8 +6,22 @@ import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
 import { FiArrowLeft } from 'react-icons/fi';
+import { useState } from 'react';
+import { use } from 'react';
 
 export function New(){
+    const [tags, setTags] = useState([]);
+    const [newTag, setNewTag] = useState('');
+
+    function handleAddTags(){
+        setTags(prevState => [...prevState, newTag]);
+        setnewTag('');
+    }
+
+    function handleRemoveTag(deleted){
+        setTags(prevState => prevState.filter(tag => tag !== deleted));
+    }
+
     return(
         <Container>
             <Header />
@@ -25,8 +39,20 @@ export function New(){
                     <Textarea placeholder='Observações'/>
                     <h2>Marcadores</h2>
                     <Markers>
-                        <NoteItem value="Drama"/>
-                        <NoteItem isNew placeholder="Nova Tag"/>
+                        {
+                            tags.map((tag, index) => (
+                            <NoteItem 
+                            key={String(index)}
+                            value={tag} 
+                            onClick={() => {}}
+                            />
+                        ))
+                        }
+                        <NoteItem isNew 
+                        placeholder="Nova Tag"
+                        onChange={e => setNewTag(e.target.value)}
+                        onClick={handleAddTags}
+                        />
                     </Markers>
                     <Controls>
                         <Button className="exclude" title="Excluir Filme"/>
