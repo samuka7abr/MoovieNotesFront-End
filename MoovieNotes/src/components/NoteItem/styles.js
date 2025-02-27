@@ -4,10 +4,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    background-color: ${({ theme, isNew }) => isNew ? "transparent" : theme.COLORS.GRAY};
+    background-color: ${({ theme, $isNew }) => $isNew ? "transparent" : theme.COLORS.GRAY};
     color:  ${({ theme }) => theme.COLORS.WHITE};
 
-    border: ${({ theme, isNew}) => isNew ? `1px dashed ${theme.COLORS.LIGHT_GRAY}` : "none"};
+    border: ${({ theme, $isNew}) => $isNew ? `1px dashed ${theme.COLORS.LIGHT_GRAY}` : "none"};
 
     margin-bottom: 8px; 
     border-radius: 10px;
