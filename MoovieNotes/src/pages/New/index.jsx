@@ -104,7 +104,7 @@ export function New(){
                         />
                     </Markers>
                     <Controls>
-                        <Button className="exclude" title="Excluir Filme" />
+                        <Button className="exclude" title="Cancelar" onClick={() => {navigate('/')}} />
                         <Button title="Salvar alterações" onClick={handleNewNote}/>
                     </Controls>
                 </Form>
